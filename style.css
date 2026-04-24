@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #91c0df;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+input, textarea {
+
+  width: 100%;
+  box-sizing: border-box; /* importante! */
+    margin-bottom: 15px;
+    padding: 12px;
+}
+
+/* Estrutura das formações */
+.formacao-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.formacao-item textarea {
+    flex: 1;
+    height: 60px;
+    resize: none;
+}
+
+/* Botão remover (-) */
+.btn-remover {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    outline: none;         /* ✅ remove borda ao clicar */
+    background:#91c0df;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;            /* ✅ mantém formato circular */
+}
+
+/* Container do botão + */
+.btn-add-container {
+    margin-top: 10px;
+}
+
+/* Botão adicionar (+) */
+.btn-adicionar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;          /* ✅ remove borda preta */
+    outline: none;         /* ✅ remove contorno */
+    background:#91c0df;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0;            /* ✅ mantém círculo perfeito */
+}
+
+/* Hover */
+.btn-adicionar:hover {
+    background: darkgreen;
+}
+
+.btn-remover:hover {
+    background: darkred;
+}
+
+/* Botões gerais */
+button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border-radius: 20px;
+    border: none;          /* ✅ remove borda padrão */
+    outline: none;         /* ✅ remove contorno */
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Página de impressão */
+.curriculo {
+    background: white;
+    padding: 30px;
+}
+
+@media print {
+    button {
+        display: none;
+    }
+}
